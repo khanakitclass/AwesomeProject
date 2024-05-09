@@ -4,7 +4,7 @@ import React from 'react'
 export default function App() {
   return (
     <View>
-      <Text>App Folder Structure</Text>
+      <Text>App Folder Structure demo</Text>
     </View>
   )
 }
