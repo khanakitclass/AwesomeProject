@@ -1,21 +1,18 @@
 import { View, Text, TouchableOpacity } from 'react-native'
 import React, { useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { increment } from '../Redux/action/counter.action';
 
 export default function Counter() {
-    const [count, setCount] = useState(0)
+   
+    const dispatch  = useDispatch(); //3
 
     const hanldeIncre = () => {
-        if (count < 5) {
-            setCount(count+1
-                
-            )
-        }
+       dispatch(increment());
     }
 
     const handleDre = () => {
-        if (count > 0) {
-            setCount(count-1)
-        }
+        dispatch(decrement());
     }
     return (
         <View>
